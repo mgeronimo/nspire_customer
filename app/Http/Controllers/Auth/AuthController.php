@@ -108,7 +108,7 @@ class AuthController extends Controller
             'postal_code' => 'required|max:255',
             'country' => 'required|max:255',
             'id_no' => 'alpha_dash|max:255',
-            'number' => 'required|string|max:19',
+            'number' => 'required|string|max:20',
             'name' => 'required|max:255',
             'expiry' => 'required|max:255',
             'cvc' => 'required|integer|max:255',

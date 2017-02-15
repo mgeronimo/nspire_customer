@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/pringles.iml" filepath="$PROJECT_DIR$/.idea/pringles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/nspire.iml" filepath="$PROJECT_DIR$/.idea/nspire.iml" />
     </modules>
   </component>
 </project>
