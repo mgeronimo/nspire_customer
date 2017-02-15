@@ -30,10 +30,7 @@ Tip 3: you can change the color of the sidebar with data-background-color="white
                             <a href="{{ url('/profile') }}">Profile</a>
                         </li>
                         <li>
-                            <a href="#">Settings</a>
-                        </li>
-                        <li>
-                            <a href="{{ url('/logout') }}">Logout</a>
+                            <a href="{{ url('/settings') }}">Settings</a>
                         </li>
                     </ul>
                 </div>
@@ -50,13 +47,13 @@ Tip 3: you can change the color of the sidebar with data-background-color="white
                 <div class="collapse" id="dashboard">
                     <ul class="nav">
                         <li>
-                            <a href="{{ url('/') }}">Account Summary</a>
+                            <a href="{{ url('/') }}">Account Dashboard</a>
                         </li>
                         <li>
-                            <a href="">Discussion Board</a>
+                            <a href="{{ url('/boards') }}">Discussion Board</a>
                         </li>
                         <li>
-                            <a href="">Private Messages</a>
+                            <a href="{{ url('/messages') }}">Private Messages</a>
                         </li>
                     </ul>
                 </div>
@@ -71,13 +68,13 @@ Tip 3: you can change the color of the sidebar with data-background-color="white
                 <div class="collapse" id="register">
                     <ul class="nav">
                         <li>
-                            <a href="">Enroll Extreme Left</a>
+                            <a href="{{ url('/left') }}">Enroll Extreme Left</a>
                         </li>
                         <li>
-                            <a href="">Enroll Extreme Right</a>
+                            <a href="{{ url('/right') }}">Enroll Extreme Right</a>
                         </li>
                         <li>
-                            <a href="">Enroll Inside Position</a>
+                            <a href="{{ url('/inside') }}">Enroll Inside Position</a>
                         </li>
                     </ul>
                 </div>
@@ -95,10 +92,10 @@ Tip 3: you can change the color of the sidebar with data-background-color="white
                             <a href="{{ url('/network') }}">Binary Genealogy</a>
                         </li>
                         <li>
-                            <a href="">Unilevel Genealogy</a>
+                            <a href="{{ url('/referral') }}">Unilevel Genealogy</a>
                         </li>
                         <li>
-                            <a href="">Customer Genealogy</a>
+                            <a href="{{ url('/customer') }}">Customer Genealogy</a>
                         </li>
                     </ul>
                 </div>
@@ -113,25 +110,25 @@ Tip 3: you can change the color of the sidebar with data-background-color="white
                 <div class="collapse" id="income">
                     <ul class="nav">
                         <li>
-                            <a href="">Income Summary</a>
+                            <a href="{{ url('/summary') }}">Income Summary</a>
                         </li>
                         <li>
-                            <a href="">First Bonus</a>
+                            <a href="{{ url('/first') }}">First Bonus</a>
                         </li>
                         <li>
-                            <a href="">Binary Bonus</a>
+                            <a href="{{ url('/binary') }}">Binary Bonus</a>
                         </li>
                         <li>
-                            <a href="">Match Bonus</a>
+                            <a href="{{ url('/match') }}">Match Bonus</a>
                         </li>
                         <li>
-                            <a href="">Unilevel Bonus</a>
+                            <a href="{{ url('/unilevel') }}">Unilevel Bonus</a>
                         </li>
                         <li>
-                            <a href="">Retail Bonus</a>
+                            <a href="{{ url('/retail') }}">Retail Bonus</a>
                         </li>
                         <li>
-                            <a href="">Global Bonus</a>
+                            <a href="{{ url('/global') }}">Global Bonus</a>
                         </li>
                     </ul>
                 </div>
@@ -146,13 +143,13 @@ Tip 3: you can change the color of the sidebar with data-background-color="white
                 <div class="collapse" id="wallet">
                     <ul class="nav">
                         <li>
-                            <a href="">Payout Transactions</a>
+                            <a href="{{ url('/payout') }}">Payout Transactions</a>
                         </li>
                         <li>
-                            <a href="">Other Transactions</a>
+                            <a href="{{ url('/wallet') }}">Other Transactions</a>
                         </li>
                         <li>
-                            <a href="">Bank Details</a>
+                            <a href="{{ url('/bank') }}">Bank Details</a>
                         </li>
                     </ul>
                 </div>
@@ -167,16 +164,16 @@ Tip 3: you can change the color of the sidebar with data-background-color="white
                 <div class="collapse" id="store">
                     <ul class="nav">
                         <li>
-                            <a href="">Nspire Products</a>
+                            <a href="{{ url('/products') }}">Nspire Products</a>
                         </li>
                         <li>
-                            <a href="">Product Orders</a>
+                            <a href="{{ url('/orders') }}">Product Orders</a>
                         </li>
                         <li>
-                            <a href="">Recurring Orders</a>
+                            <a href="{{ url('/recurring') }}">Recurring Orders</a>
                         </li>
                         <li>
-                            <a href="">Order Tracking</a>
+                            <a href="{{ url('/tracking') }}">Order Tracking</a>
                         </li>
                     </ul>
                 </div>
@@ -191,16 +188,19 @@ Tip 3: you can change the color of the sidebar with data-background-color="white
                 <div class="collapse" id="report">
                     <ul class="nav">
                         <li>
-                            <a href="">Previous Rankings</a>
+                            <a href="{{ url('/rankings') }}">Previous Rankings</a>
                         </li>
                         <li>
-                            <a href="">Sales Report</a>
+                            <a href="{{ url('/sales') }}">Sales Report</a>
                         </li>
                         <li>
-                            <a href="">Income Report</a>
+                            <a href="{{ url('/income') }}">Income Report</a>
                         </li>
                         <li>
-                            <a href="">Network Performance</a>
+                            <a href="{{ url('/financial') }}">Financial Report</a>
+                        </li>
+                        <li>
+                            <a href="{{ url('/performance') }}">Network Performance</a>
                         </li>
                     </ul>
                 </div>
