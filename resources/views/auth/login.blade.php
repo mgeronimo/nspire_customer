@@ -6,7 +6,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png" />
     <link rel="icon" type="image/png" href="assets/img/favicon.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Nspire Network - Customer Login</title>
+    <title>Nspire Network</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
     <!-- Bootstrap core CSS     -->
@@ -80,7 +80,7 @@
                                 {{ csrf_field() }}
                                 <div class="card card-login card-hidden">
                                     <div class="card-header text-center" data-background-color="rose">
-                                        <h4 class="card-title">Customer Login</h4>
+                                        <h4 class="card-title">Distributor Login</h4>
                                         <div class="social-line">
                                             <a href="#btn" class="btn btn-just-icon btn-simple">
                                                 <i class="fa fa-facebook-square"></i>
