@@ -6,7 +6,7 @@ Tip 3: you can change the color of the sidebar with data-background-color="white
 -->
     <div class="logo">
         <a href="{{ url('/') }}" class="simple-text">
-            nspirenetwork
+            NSPIRE NETWORK
         </a>
     </div>
     <div class="logo logo-mini">
@@ -60,7 +60,7 @@ Tip 3: you can change the color of the sidebar with data-background-color="white
             </li>
             <li>
                 <a data-toggle="collapse" href="#register" class="collapsed">
-                    <i class="material-icons">assignment_ind</i>
+                    <i class="material-icons">account_box</i>
                     <p>Enroll Distributor
                         <b class="caret"></b>
                     </p>
