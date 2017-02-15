@@ -40,6 +40,16 @@
                         </a>
                     </li> -->
                     <li class="">
+                        <a href="{{ url('/replicated') }}">
+                            <i class="material-icons">home</i> Home
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="{{ url('/shop') }}">
+                            <i class="material-icons">shopping_cart</i> Shop
+                        </a>
+                    </li>
+                    <li class="">
                         <a href="{{ url('/register') }}">
                             <i class="material-icons">person_add</i> Register
                         </a>

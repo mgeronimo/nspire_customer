@@ -42,6 +42,16 @@
                         <i class="material-icons">dashboard</i> Dashboard
                     </a>
                 </li> -->
+                <li class="">
+                    <a href="{{ url('/replicated') }}">
+                        <i class="material-icons">home</i> Home
+                    </a>
+                </li>
+                <li class="">
+                    <a href="{{ url('/shop') }}">
+                        <i class="material-icons">shopping_cart</i> Shop
+                    </a>
+                </li>
                 <li class=" active ">
                     <a href="{{ url('/register') }}">
                         <i class="material-icons">person_add</i> Register
@@ -101,14 +111,17 @@
                                                 <a href="#network" data-toggle="tab">Network Details</a>
                                             </li>
                                             <li>
-                                                <a href="#address" data-toggle="tab">Payment Details</a>
+                                                <a href="#package" data-toggle="tab">Product Packages</a>
+                                            </li>
+                                            <li>
+                                                <a href="#payment" data-toggle="tab">Payment Details</a>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="tab-content">
                                         <div class="tab-pane" id="about">
                                             <div class="row">
-                                                <h4 class="info-text"> Let's start with the basic information</h4>
+                                                <h4 class="info-text"> Let's start with the basic information.</h4>
 
                                                 <div class="">
                                                     <div class="input-group">
@@ -274,7 +287,7 @@
                                         </div>
                                         <div class="tab-pane" id="account">
                                             <div class="row">
-                                                <h4 class="info-text">How about your contact details?</h4>
+                                                <h4 class="info-text">And also your contact details.</h4>
 
                                                 <div class="">
                                                     <div class="col-md-12">
@@ -473,7 +486,14 @@
 
                                             </div>
                                         </div>
-                                        <div class="tab-pane" id="address">
+                                        <div class="tab-pane" id="package">
+                                            <div class="row">
+                                                <h4 class="info-text">First order product package of your choice.</h4>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="payment">
                                             <div class="row">
                                                 <h4 class="info-text">And your payment details, please.</h4>
                                                 <div class="">
