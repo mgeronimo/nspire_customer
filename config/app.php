@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'America/New_York',
 
     /*
     |--------------------------------------------------------------------------
@@ -156,6 +156,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         'Webpatser\Countries\CountriesServiceProvider',
+        Way\Generators\GeneratorsServiceProvider::class,
+        Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider::class,
+        Orangehill\Iseed\IseedServiceProvider::class
 
     ],
 

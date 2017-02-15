@@ -36,7 +36,7 @@ class ActivationService
 
 
         Mail::send('auth.emails.verify_email', ['user' => $user, 'link'=>$link], function ($m) use ($user) {
-            $m->from('admin@user.com', 'Admin User');
+            $m->from('admin@user.com', 'Nspire Network LLC');
 
             $m->to($user->email, $user->name)->subject('Please Verify Your Email');
         });

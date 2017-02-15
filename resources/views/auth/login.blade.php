@@ -6,7 +6,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png" />
     <link rel="icon" type="image/png" href="assets/img/favicon.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Project Pringles</title>
+    <title>Nspire Network</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
     <!-- Bootstrap core CSS     -->
@@ -16,7 +16,7 @@
     <!--  CSS for Demo Purpose, don't include it in your project     -->
     <link href="{{ url('assets/css/demo.css') }}" rel="stylesheet" />
     <!--     Fonts and icons     -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" />
 </head>
 
@@ -30,7 +30,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href=" ../dashboard.html ">Project Pringles</a>
+                <a class="navbar-brand" href=" ../dashboard.html ">Nspire Network</a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -70,7 +70,7 @@
                                 {{ csrf_field() }}
                                 <div class="card card-login card-hidden">
                                     <div class="card-header text-center" data-background-color="rose">
-                                        <h4 class="card-title">Login</h4>
+                                        <h4 class="card-title">Distributor Login</h4>
                                         <div class="social-line">
                                             <a href="#btn" class="btn btn-just-icon btn-simple">
                                                 <i class="fa fa-facebook-square"></i>
@@ -84,7 +84,7 @@
                                         </div>
                                     </div>
                                     <p class="category text-center">
-                                        Or Be Classical
+                                        Sign in to start your session
                                     </p>
                                     <div class="card-content">
                                         <div class="input-group">
@@ -161,42 +161,18 @@
             </div>
             <footer class="footer">
                 <div class="container">
-                    <nav class="pull-left">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Company
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Portfolio
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Blog
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <!--<p class="copyright pull-right">
+                    <p class="copyright text-center">
                         &copy;
                         <script>
                             document.write(new Date().getFullYear())
                         </script>
-                    </p>-->
+                        <a href="http://nspirenetwork.com">Nspire Network LLC.</a>, Mission Driven People
+                    </p>
                 </div>
             </footer>
         </div>
     </div>
 </body>
-
 <!--   Core JS Files   -->
 <script src="{{ url('assets/js/jquery-3.1.1.min.js') }}" type="text/javascript"></script>
 <script src="{{ url('assets/js/jquery-ui.min.js') }}" type="text/javascript"></script>
@@ -221,8 +197,6 @@
 <script src="{{ url('assets/js/jquery-jvectormap.js') }}"></script>
 <!-- Sliders Plugin -->
 <script src="{{ url('assets/js/nouislider.min.js') }}"></script>
-<!--  Google Maps Plugin    -->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
 <!-- Select Plugin -->
 <script src="{{ url('assets/js/jquery.select-bootstrap.js') }}"></script>
 <!--  DataTables.net Plugin    -->
@@ -238,24 +212,13 @@
 <!-- Material Dashboard javascript methods -->
 <script src="{{ url('assets/js/material-dashboard.js') }}"></script>
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
-
 <script type="text/javascript">
     $().ready(function() {
         demo.checkFullPageBackgroundImage();
-
         setTimeout(function() {
             // after 1000 ms we add the class animated to the login/register card
             $('.card').removeClass('card-hidden');
         }, 700)
     });
-  //   var config = {
-  //   apiKey: "AIzaSyCqRrHrdYxJ-Yfcs-f0qvfby-Rg02KyxX0",
-  //   authDomain: "project-pringles.firebaseapp.com",
-  //   databaseURL: "https://project-pringles.firebaseio.com",
-  //   storageBucket: "project-pringles.appspot.com",
-  //   messagingSenderId: "1022469405745"
-  // };
-  // firebase.initializeApp(config);
 </script>
-
 </html>

@@ -17,7 +17,7 @@ Tip 3: you can change the color of the sidebar with data-background-color="white
     <div class="sidebar-wrapper">
         <div class="user">
             <div class="photo">
-                <img src="{{ url('https://pixabay.com/get/e830b80d2bf21c22d2524518a33219c8b66ae3d111b7194194f0c671/avatar-159236_1280.png') }}" />
+                <img src="{{ url('/assets/img/faces/avatar.jpg') }}" />
             </div>
             <div class="info">
                 <a data-toggle="collapse" href="#collapseExample" class="collapsed">
@@ -27,7 +27,7 @@ Tip 3: you can change the color of the sidebar with data-background-color="white
                 <div class="collapse" id="collapseExample">
                     <ul class="nav">
                         <li>
-                            <a href="{{ url('/profile') }}">My Profile</a>
+                            <a href="{{ url('/profile') }}">Profile</a>
                         </li>
                         <li>
                             <a href="#">Settings</a>
@@ -41,34 +41,169 @@ Tip 3: you can change the color of the sidebar with data-background-color="white
         </div>
         <ul class="nav">
             <li>
-                <a href="{{ url('/') }}">
+                <a data-toggle="collapse" href="#dashboard" class="collapsed">
                     <i class="material-icons">dashboard</i>
-                    <p>Dashboard</p>
+                    <p>Account Dashboard
+                        <b class="caret"></b>
+                    </p>
                 </a>
+                <div class="collapse" id="dashboard">
+                    <ul class="nav">
+                        <li>
+                            <a href="{{ url('/') }}">Account Summary</a>
+                        </li>
+                        <li>
+                            <a href="">Discussion Board</a>
+                        </li>
+                        <li>
+                            <a href="">Private Messages</a>
+                        </li>
+                    </ul>
+                </div>
             </li>
             <li>
-                <a href="{{ url('/') }}">
+                <a data-toggle="collapse" href="#register" class="collapsed">
+                    <i class="material-icons">assignment_ind</i>
+                    <p>Enroll Distributor
+                        <b class="caret"></b>
+                    </p>
+                </a>
+                <div class="collapse" id="register">
+                    <ul class="nav">
+                        <li>
+                            <a href="">Enroll Extreme Left</a>
+                        </li>
+                        <li>
+                            <a href="">Enroll Extreme Right</a>
+                        </li>
+                        <li>
+                            <a href="">Enroll Inside Position</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a data-toggle="collapse" href="#network" class="collapsed">
                     <i class="material-icons">device_hub</i>
-                    <p>Network</p>
+                    <p>Network Structure
+                        <b class="caret"></b>
+                    </p>
                 </a>
+                <div class="collapse" id="network">
+                    <ul class="nav">
+                        <li>
+                            <a href="{{ url('/network') }}">Binary Genealogy</a>
+                        </li>
+                        <li>
+                            <a href="">Unilevel Genealogy</a>
+                        </li>
+                        <li>
+                            <a href="">Customer Genealogy</a>
+                        </li>
+                    </ul>
+                </div>
             </li>
             <li>
-                <a href="{{ url('/') }}">
+                <a data-toggle="collapse" href="#income" class="collapsed">
+                    <i class="material-icons">credit_card</i>
+                    <p>Personal Income
+                        <b class="caret"></b>
+                    </p>
+                </a>
+                <div class="collapse" id="income">
+                    <ul class="nav">
+                        <li>
+                            <a href="">Income Summary</a>
+                        </li>
+                        <li>
+                            <a href="">First Bonus</a>
+                        </li>
+                        <li>
+                            <a href="">Binary Bonus</a>
+                        </li>
+                        <li>
+                            <a href="">Match Bonus</a>
+                        </li>
+                        <li>
+                            <a href="">Unilevel Bonus</a>
+                        </li>
+                        <li>
+                            <a href="">Retail Bonus</a>
+                        </li>
+                        <li>
+                            <a href="">Global Bonus</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a data-toggle="collapse" href="#wallet" class="collapsed">
                     <i class="material-icons">account_balance_wallet</i>
-                    <p>Wallet</p>
+                    <p>Electronic Wallet
+                        <b class="caret"></b>
+                    </p>
                 </a>
+                <div class="collapse" id="wallet">
+                    <ul class="nav">
+                        <li>
+                            <a href="">Payout Transactions</a>
+                        </li>
+                        <li>
+                            <a href="">Other Transactions</a>
+                        </li>
+                        <li>
+                            <a href="">Bank Details</a>
+                        </li>
+                    </ul>
+                </div>
             </li>
             <li>
-                <a href="{{ url('/') }}">
+                <a data-toggle="collapse" href="#store" class="collapsed">
                     <i class="material-icons">local_grocery_store</i>
-                    <p>Store</p>
+                    <p>Shopping Cart
+                        <b class="caret"></b>
+                    </p>
                 </a>
+                <div class="collapse" id="store">
+                    <ul class="nav">
+                        <li>
+                            <a href="">Nspire Products</a>
+                        </li>
+                        <li>
+                            <a href="">Product Orders</a>
+                        </li>
+                        <li>
+                            <a href="">Recurring Orders</a>
+                        </li>
+                        <li>
+                            <a href="">Order Tracking</a>
+                        </li>
+                    </ul>
+                </div>
             </li>
             <li>
-                <a href="{{ url('/') }}">
+                <a data-toggle="collapse" href="#report" class="collapsed">
                     <i class="material-icons">assessment</i>
-                    <p>Reports</p>
+                    <p>Online Reports
+                        <b class="caret"></b>
+                    </p>
                 </a>
+                <div class="collapse" id="report">
+                    <ul class="nav">
+                        <li>
+                            <a href="">Previous Rankings</a>
+                        </li>
+                        <li>
+                            <a href="">Sales Report</a>
+                        </li>
+                        <li>
+                            <a href="">Income Report</a>
+                        </li>
+                        <li>
+                            <a href="">Network Performance</a>
+                        </li>
+                    </ul>
+                </div>
             </li>
         </ul>
     </div>

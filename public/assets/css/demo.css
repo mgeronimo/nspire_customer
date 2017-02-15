@@ -56,3 +56,9 @@
 .tim-row h3{
     margin-top: 0;
 }
+.dt-buttons{
+    float: right !important;
+}
+.dt-button{
+    margin: 0 !important;
+}

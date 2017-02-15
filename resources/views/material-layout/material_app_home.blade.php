@@ -3,12 +3,14 @@
 
 <head>
     <meta charset="utf-8" />
+    @yield('additional_meta')
     <link rel="apple-touch-icon" sizes="76x76" href="{{ url('assets/img/apple-icon.png') }}" />
     <link rel="icon" type="image/png" href="{{ url('assets/img/favicon.png') }}" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>@yield('page_title')</title>
+    <title>Nspire Network</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/jszip-2.5.0/pdfmake-0.1.18/af-2.1.3/b-1.2.4/b-colvis-1.2.4/b-flash-1.2.4/b-html5-1.2.4/b-print-1.2.4/cr-1.3.2/fc-3.2.2/fh-3.1.2/kt-2.2.0/r-2.1.0/rr-1.2.0/sc-1.4.2/se-1.2.0/datatables.min.css"/>
     <!-- Bootstrap core CSS     -->
     <link href="{{ url('assets/css/bootstrap.min.css') }}" rel="stylesheet" />
     <!--  Material Dashboard CSS    -->
@@ -16,7 +18,7 @@
     <!--  CSS for Demo Purpose, don't include it in your project     -->
     <link href="{{ url('assets/css/demo.css') }}" rel="stylesheet" />
     <!--     Fonts and icons     -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" />
 </head>
 
@@ -63,8 +65,6 @@
 <script src="{{ url('assets/js/jquery-jvectormap.js') }}"></script>
 <!-- Sliders Plugin -->
 <script src="{{ url('assets/js/nouislider.min.js') }}"></script>
-<!--  Google Maps Plugin    -->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
 <!-- Select Plugin -->
 <script src="{{ url('assets/js/jquery.select-bootstrap.js') }}"></script>
 <!--  DataTables.net Plugin    -->
@@ -81,21 +81,20 @@
 <script src="{{ url('assets/js/material-dashboard.js') }}"></script>
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
 <script src="{{ url('assets/js/demo.js') }}"></script>
-
+<script type="text/javascript" src="https://cdn.datatables.net/v/dt/jszip-2.5.0/pdfmake-0.1.18/af-2.1.3/b-1.2.4/b-colvis-1.2.4/b-flash-1.2.4/b-html5-1.2.4/b-print-1.2.4/cr-1.3.2/fc-3.2.2/fh-3.1.2/kt-2.2.0/r-2.1.0/rr-1.2.0/sc-1.4.2/se-1.2.0/datatables.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
-
         // Javascript method's body can be found in assets/js/demos.js
         if (window.location.pathname == "/" || window.location.pathname == "/home") {
             demo.initDashboardPageCharts();
             demo.initVectorMap();
         }
-
         if (window.location.pathname == "/edit-profile") {
             demo.initMaterialWizard();
         }
-
-
     });
 </script>
+
+@yield('additional_js')
+
 </html>

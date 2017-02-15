@@ -46,11 +46,10 @@ class CreateDistributorProfileTable extends Migration
             $table->string('company_email');
             $table->string('company_phone');
 
-
             $table->string('birthdate');
-            $table->string('ssn');
-            $table->string('ein');
-            $table->string('tin');
+
+            $table->string('id_number');
+            $table->string('id_type');
 
             $table->string('cc_no');
             $table->string('cc_name');

@@ -33,30 +33,14 @@ class UserController extends Controller
         }
 
     	$user = new User;
-    	$user->name = $request->name;
     	$user->email = $request->email;
     	$user->password = Hash::make($request->password);
     	$user->country = $request->country;
     	$user->save();
 
-		// send email confirmation here
-        $this->sendVerificationEmail($user);
-
     	return redirect('/')->with('message', 'User successfully created!');
     }
 
-	public function sendVerificationEmail(User $user){
-
-		Mail::send('auth.emails.verify_email', ['user' => $user], function ($m) use ($user) {
-			$m->from('admin@user.com', 'Admin User');
-
-			$m->to($user->email, $user->name)->subject('Please Verify Your Email');
-		});
-	}
-
-	public function verifyEmail(){
-		return 'hello';
-	}
 }
 
 

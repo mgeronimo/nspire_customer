@@ -47,14 +47,19 @@
 demo = {
     editProfile: function() {
         console.log("edit profile");
-        $('#editProfile').prop('disabled', true);
-        $('#save').prop('disabled', false);
+        $('#editProfile').addClass('hidden');
+        $('#save').removeClass('hidden');
+        $('#cancelEdit').removeClass('hidden');
         $('.profile-field').removeAttr("readonly");
     },
 
     saveProfile: function() {
-        $('#editProfile').prop('disabled', false);
-        $('#save').prop('disabled', true);
+        $("#frmUpdateProfile").submit();
+    },
+    cancelEdit: function(){
+        $('#save').addClass('hidden');
+        $('#cancelEdit').addClass('hidden');
+        $('#editProfile').removeClass('hidden');
         $('.profile-field').attr("readonly", "");
     },
 
@@ -172,7 +177,7 @@ demo = {
 
             username: {
                 required: false,
-                minlength: 6,
+                minlength: 2,
                 maxlength: 15
             },
 

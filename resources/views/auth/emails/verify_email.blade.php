@@ -695,9 +695,7 @@
 
     </style>
 </head>
-<body style="background-color: #eee;font-size: 15px;width: 100% !important;min-width: 100%;margin: 0;padding: 0;
-color: #212121; font-family: "Helvetica Neue", Helvetica, Arial, Verdana, "Trebuchet MS";font-weight: 400; font-size: 14px;
-line-height: 1.429; letter-spacing: 0.001em; background-color: #FFF;">
+<body style="background-color: #eee; font-size: 15px; width: 100% !important; min-width: 100%; margin: 0; padding: 0; color: #212121; font-family: "Helvetica Neue", Helvetica, Arial, Verdana, "Trebuchet MS"; font-weight: 400; font-size: 14px; line-height: 1.429; letter-spacing: 0.001em; background-color: #FFF;">
 
 <table class="mui-body" cellpadding="0" cellspacing="0" border="0"
        style="background-color: #eee;font-size: 15px;border-spacing: 0; border-collapse: collapse;mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
@@ -709,10 +707,9 @@ line-height: 1.429; letter-spacing: 0.001em; background-color: #FFF;">
                     <tr>
                         <td class="mui-container-fixed" style="padding-top: 15px;padding-bottom: 15px;padding: 0; text-align: left; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important;mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                 <![endif]-->
-                <div class="mui-container" style="padding-top: 15px;padding-bottom: 15px;">
-                    <h3 class="mui--text-center">Brand.io</h3>
+                <div class="mui-container" style="padding-top: 15px; padding-bottom: 15px;">
                     <table cellpadding="0" cellspacing="0" border="0" width="100%"
-                           style="border-spacing: 0; border-collapse: collapse;mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                           style="border-spacing: 0; border-collapse: collapse;mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding:10px;">
                         <tr>
                             <td class="mui-panel" style="padding: 0; text-align: left; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important;mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                                 <table
@@ -725,25 +722,23 @@ line-height: 1.429; letter-spacing: 0.001em; background-color: #FFF;">
                                 >
                                     <tbody>
                                     <tr>
-                                        <td style="padding-bottom: 15px;padding: 0; text-align: left; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important;mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                                            <h2 style="margin-top: 0px;margin-bottom: 0px;">Welcome to Brand.io!</h2>
+                                        <td style="padding: 15px 15px 15px 15px; text-align: center; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important;mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                            <h2 style="margin-top: 0px;margin-bottom: 0px;">Welcome to Nspire Network LLC</h2>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="mui--divider-top"
-                                            style="padding-bottom: 15px;padding-top: 15px;padding: 0; text-align: left; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important;mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                            style="padding: 15px 15px 0 15px; text-align: left; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important;mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                                             Hello Friend,
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td  style="padding-bottom: 15px;padding: 0; text-align: left; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important;mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                                            Thanks for signing up for our service! Brand.io is the fun new
-                                            way to brand your I/O. Please verify your email by clicking
-                                            this button:
+                                        <td  style="padding: 15px 15px 15px 15px; text-align: left; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important;mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                            Thanks for signing up for our distributorship and business opportunity. Please verify your email by clicking the following button
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="padding-bottom: 15px;padding: 0; text-align: left; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important;mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                        <td style="padding: 0 15px 0 15px; text-align: center; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important;mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                                             <table
                                                     class="mui-btn mui-btn--primary"
                                                     border="0"
@@ -760,13 +755,13 @@ line-height: 1.429; letter-spacing: 0.001em; background-color: #FFF;">
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="padding-bottom: 15px;padding: 0; text-align: left; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important;mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                        <td style="padding: 15px 15px 0 15px; text-align: left; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important;mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                                             Thanks,
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td id="last-cell" style="padding-bottom: 15px;padding: 0; text-align: left; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important;mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                                            The Brand.io Team
+                                        <td id="last-cell" style="padding: 0 15px 15px 15px; text-align: left; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important;mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                            Nspire Network Support Team
                                         </td>
                                     </tr>
                                     </tbody>

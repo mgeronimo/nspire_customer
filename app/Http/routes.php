@@ -20,6 +20,13 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/profile', 'HomeController@profile');
 Route::get('/edit-profile', 'HomeController@editProfile');
+Route::post('/profile','DistributorController@updateDistributorDetails');
+
+
+
+/*Test Routes*/
+
+Route::get('/network','NetworkController@index');
 
 Route::get('/test-email',function(){
     return view('auth.emails.verify_email',['link'=>'abcd']);
