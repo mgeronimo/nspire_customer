@@ -108,6 +108,8 @@ class AuthController extends Controller
             'postal_code' => 'required|max:255',
             'country' => 'required|max:255',
             'id_no' => 'alpha_dash|max:255',
+            'distributor_parent_username' => 'required|max:255',
+            'direct_referrer_username' => 'required|max:255',
             // 'number' => 'required|string|max:20',
             // 'name' => 'required|max:255',
             // 'expiry' => 'required|max:255',
@@ -150,6 +152,8 @@ class AuthController extends Controller
         ]);
         $customer->id_number = $data['id_no'];
         $customer->id_type = $data['id_type'];
+        $customer->distributor_parent_username = $data['distributor_parent_username'];
+        $customer->direct_referrer_username = $data['direct_referrer_username'];
         $customer->save();
         return $user;
     }

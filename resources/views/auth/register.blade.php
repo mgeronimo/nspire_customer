@@ -107,10 +107,10 @@
                                             <li>
                                                 <a href="#account" data-toggle="tab">Contact Details</a>
                                             </li>
-                                            {{-- <li>
+                                            <li>
                                                 <a href="#network" data-toggle="tab">Network Details</a>
                                             </li>
-                                            <li>
+                                            {{-- <li>
                                                 <a href="#package" data-toggle="tab">Product Packages</a>
                                             </li>
                                             <li>
@@ -479,14 +479,54 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        {{-- <div class="tab-pane" id="network">
+                                        <div class="tab-pane" id="network">
                                             <div class="row">
-                                                <h4 class="info-text">Network placement and position details.</h4>
+                                                <h4 class="info-text">Network details.</h4>
+                                                <div class="">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon">
+                                                            <i class="material-icons">face</i>
+                                                        </span>
 
+                                                        <div class="form-group label-floating">
+                                                            <label class="control-label">Distributor Username
+                                                                <small>(required)</small>
+                                                            </label>
+                                                            <input name="distributor_parent_username" type="text" class="form-control"
+                                                                   value="{{old('distributor_parent_username')}}">
 
+                                                            @if ($errors->has('distributor_parent_username'))
+                                                                <span class="help-block">
+                                                                    <strong>{{ $errors->first('distributor_parent_username') }}</strong>
+                                                                </span>
+                                                            @endif
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon">
+                                                            <i class="material-icons">face</i>
+                                                        </span>
+
+                                                        <div class="form-group label-floating">
+                                                            <label class="control-label">Direct Referrer Username
+                                                                <small>(required)</small>
+                                                            </label>
+                                                            <input name="direct_referrer_username" type="text" class="form-control"
+                                                                   value="{{old('direct_referrer_username')}}">
+
+                                                            @if ($errors->has('direct_referrer_username'))
+                                                                <span class="help-block">
+                                                                    <strong>{{ $errors->first('direct_referrer_username') }}</strong>
+                                                                </span>
+                                                            @endif
+
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane" id="package">
+                                        {{-- <div class="tab-pane" id="package">
                                             <div class="row">
                                                 <h4 class="info-text">First order product package of your choice.</h4>
 

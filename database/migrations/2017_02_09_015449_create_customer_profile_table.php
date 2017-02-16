@@ -18,8 +18,10 @@ class CreateCustomerProfileTable extends Migration
             $table->increments('id');
 
             $table->integer('user_id');
-            $table->integer('distributor_parent_id');
-            $table->integer('direct_referrer_id');
+            // $table->integer('distributor_parent_id');
+            // $table->integer('direct_referrer_id');
+            $table->string('distributor_parent_username');
+            $table->string('direct_referrer_username');
 
             $table->string('first_name');
             $table->string('middle_name');
