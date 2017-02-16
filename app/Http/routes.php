@@ -20,7 +20,7 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/profile', 'HomeController@profile');
 Route::get('/edit-profile', 'HomeController@editProfile');
-Route::post('/profile','DistributorController@updateDistributorDetails');
+Route::post('/profile','CustomerController@updateCustomrDetails');
 
 
 

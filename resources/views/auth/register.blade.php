@@ -6,7 +6,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="{{ url('assets/img/apple-icon.png') }}"/>
     <link rel="icon" type="image/png" href="{{ url('assets/img/favicon.png') }}"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>Nspire Network - Distributor Registration</title>
+    <title>Nspire Network - Customer Registration</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
     <meta name="viewport" content="width=device-width"/>
     <!-- Bootstrap core CSS     -->
@@ -77,7 +77,7 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <div class="card card-signup">
-                        <h2 class="card-title text-center">Distributor Registration</h2>
+                        <h2 class="card-title text-center">Customer Registration</h2>
 
                         <div class="wizard-container">
                             @if (count($errors) > 0)
@@ -107,7 +107,7 @@
                                             <li>
                                                 <a href="#account" data-toggle="tab">Contact Details</a>
                                             </li>
-                                            <li>
+                                            {{-- <li>
                                                 <a href="#network" data-toggle="tab">Network Details</a>
                                             </li>
                                             <li>
@@ -115,7 +115,7 @@
                                             </li>
                                             <li>
                                                 <a href="#payment" data-toggle="tab">Payment Details</a>
-                                            </li>
+                                            </li> --}}
                                         </ul>
                                     </div>
                                     <div class="tab-content">
@@ -479,7 +479,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane" id="network">
+                                        {{-- <div class="tab-pane" id="network">
                                             <div class="row">
                                                 <h4 class="info-text">Network placement and position details.</h4>
 
@@ -492,8 +492,8 @@
 
 
                                             </div>
-                                        </div>
-                                        <div class="tab-pane" id="payment">
+                                        </div> --}}
+                                        {{-- <div class="tab-pane" id="payment">
                                             <div class="row">
                                                 <h4 class="info-text">And your payment details, please.</h4>
                                                 <div class="">
@@ -582,7 +582,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                         <div class="wizard-footer">
                                             <div class="pull-right">
                                                 <input type='button' class='btn btn-next btn-fill btn-rose btn-wd'

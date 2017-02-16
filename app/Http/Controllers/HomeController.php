@@ -7,7 +7,7 @@ use App\OcCountries;
 use App\OcZones;
 use Illuminate\Http\Request;
 use Auth;
-use App\Distributor;
+use App\Customer;
 
 class HomeController extends Controller
 {
@@ -33,7 +33,7 @@ class HomeController extends Controller
 
     public function profile()
     {
-        $user = Distributor::where('id', Auth::user()->id)->first();
+        $user = Customer::where('id', Auth::user()->id)->first();
         $user->username = Auth::user()->username;
         $user->email = Auth::user()->email;
         $user->country = OcCountries::where('country_id', '=', $user->country)->select('name')->first();
@@ -42,7 +42,7 @@ class HomeController extends Controller
         $countries = OcCountries::select('country_id', 'name', 'iso_code_3')->orderBy('name')->get();
         $zones = OcZones::select('zone_id', 'name', 'code', 'country_id')->orderBy('name')->get();
 
-        return view('distributor_profile.profile')
+        return view('customer_profile.profile')
             ->with('user', $user)
             ->with('countries', $countries)
             ->with('zones', $zones);

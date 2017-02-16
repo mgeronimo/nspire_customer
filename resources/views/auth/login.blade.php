@@ -80,7 +80,7 @@
                                 {{ csrf_field() }}
                                 <div class="card card-login card-hidden">
                                     <div class="card-header text-center" data-background-color="rose">
-                                        <h4 class="card-title">Distributor Login</h4>
+                                        <h4 class="card-title">Customer Login</h4>
                                         <div class="social-line">
                                             <a href="#btn" class="btn btn-just-icon btn-simple">
                                                 <i class="fa fa-facebook-square"></i>

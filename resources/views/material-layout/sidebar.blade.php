@@ -21,7 +21,7 @@ Tip 3: you can change the color of the sidebar with data-background-color="white
             </div>
             <div class="info">
                 <a data-toggle="collapse" href="#collapseExample" class="collapsed">
-                    {{ \App\Distributor::where('user_id','=',Auth::user()->id)->get()->pluck('first_name')[0] }}
+                    {{ \App\Customer::where('user_id','=',Auth::user()->id)->get()->pluck('first_name')[0] }}
                     <b class="caret"></b>
                 </a>
                 <div class="collapse" id="collapseExample">

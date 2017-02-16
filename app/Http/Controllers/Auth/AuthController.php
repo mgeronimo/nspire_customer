@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Country;
-use App\Distributor;
+use App\Customer;
 use App\OcCountries;
 use App\OcZones;
 use App\User;
@@ -108,10 +108,10 @@ class AuthController extends Controller
             'postal_code' => 'required|max:255',
             'country' => 'required|max:255',
             'id_no' => 'alpha_dash|max:255',
-            'number' => 'required|string|max:20',
-            'name' => 'required|max:255',
-            'expiry' => 'required|max:255',
-            'cvc' => 'required|integer|max:255',
+            // 'number' => 'required|string|max:20',
+            // 'name' => 'required|max:255',
+            // 'expiry' => 'required|max:255',
+            // 'cvc' => 'required|integer|max:255',
         ]);
     }
 
@@ -127,9 +127,9 @@ class AuthController extends Controller
             'username' => $data['username'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
-            'role' => 'distributor',
+            'role' => 'customer',
         ]);
-        $distributor = Distributor::create([
+        $customer = Customer::create([
             'first_name' => $data['first_name'],
             'middle_name' => $data['middle_name'],
             'last_name' => $data['last_name'],
@@ -148,9 +148,9 @@ class AuthController extends Controller
             'id_number' => $data['id_no'],
             'id_type' => $data['id_type'],
         ]);
-        $distributor->id_number = $data['id_no'];
-        $distributor->id_type = $data['id_type'];
-        $distributor->save();
+        $customer->id_number = $data['id_no'];
+        $customer->id_type = $data['id_type'];
+        $customer->save();
         return $user;
     }
 
