@@ -42,16 +42,6 @@
                         <i class="material-icons">dashboard</i> Dashboard
                     </a>
                 </li> -->
-                <li class="">
-                    <a href="{{ url('/replicated') }}">
-                        <i class="material-icons">home</i> Home
-                    </a>
-                </li>
-                <li class="">
-                    <a href="{{ url('/shop') }}">
-                        <i class="material-icons">shopping_cart</i> Shop
-                    </a>
-                </li>
                 <li class=" active ">
                     <a href="{{ url('/register') }}">
                         <i class="material-icons">person_add</i> Register
@@ -498,26 +488,6 @@
                                                             @if ($errors->has('distributor_parent_username'))
                                                                 <span class="help-block">
                                                                     <strong>{{ $errors->first('distributor_parent_username') }}</strong>
-                                                                </span>
-                                                            @endif
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="input-group">
-                                                        <span class="input-group-addon">
-                                                            <i class="material-icons">face</i>
-                                                        </span>
-
-                                                        <div class="form-group label-floating">
-                                                            <label class="control-label">Direct Referrer Username
-                                                                <small>(required)</small>
-                                                            </label>
-                                                            <input name="direct_referrer_username" type="text" class="form-control"
-                                                                   value="{{old('direct_referrer_username')}}">
-
-                                                            @if ($errors->has('direct_referrer_username'))
-                                                                <span class="help-block">
-                                                                    <strong>{{ $errors->first('direct_referrer_username') }}</strong>
                                                                 </span>
                                                             @endif
 

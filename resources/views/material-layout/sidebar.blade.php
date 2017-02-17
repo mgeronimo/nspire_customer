@@ -61,20 +61,17 @@ Tip 3: you can change the color of the sidebar with data-background-color="white
             <li>
                 <a data-toggle="collapse" href="#register" class="collapsed">
                     <i class="material-icons">account_box</i>
-                    <p>Enroll Distributor
+                    <p>Customer Referrals
                         <b class="caret"></b>
                     </p>
                 </a>
                 <div class="collapse" id="register">
                     <ul class="nav">
                         <li>
-                            <a href="{{ url('/left') }}">Enroll Extreme Left</a>
+                            <a href="{{ url('/add-referral') }}">Register Referral</a>
                         </li>
                         <li>
-                            <a href="{{ url('/right') }}">Enroll Extreme Right</a>
-                        </li>
-                        <li>
-                            <a href="{{ url('/inside') }}">Enroll Inside Position</a>
+                            <a href="{{ url('/all-referrals') }}">View All Referrals</a>
                         </li>
                     </ul>
                 </div>

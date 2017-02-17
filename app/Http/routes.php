@@ -21,6 +21,8 @@ Route::get('/home', 'HomeController@index');
 Route::get('/profile', 'HomeController@profile');
 Route::get('/edit-profile', 'HomeController@editProfile');
 Route::post('/profile','CustomerController@updateCustomrDetails');
+Route::get('/add-referral','CustomerController@createReferral');
+Route::post('/add-referral','CustomerController@addReferral');
 
 
 
