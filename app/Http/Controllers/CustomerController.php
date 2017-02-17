@@ -207,7 +207,8 @@ class CustomerController extends Controller
         ]);
         $customer->id_number = $data['id_no'];
         $customer->id_type = $data['id_type'];
-        $customer->distributor_parent_username = Auth::user()->distributor_parent_username;
+        $distributor = Customer::where('id', Auth::user()->id)->first();
+        $customer->distributor_parent_username = $distributor->distributor_parent_username;
         $customer->direct_referrer_username = Auth::user()->id;
         $customer->save();
         return $user;

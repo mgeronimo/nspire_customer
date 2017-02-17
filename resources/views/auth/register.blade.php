@@ -66,7 +66,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-                    <div class="card card-signup">
+                    <div class="card card-signup" style="margin-top: 10px;">
                         <h2 class="card-title text-center">Customer Registration</h2>
 
                         <div class="wizard-container">
@@ -363,7 +363,7 @@
                                                                     <option disabled selected> Choose State</option>
                                                                     @for($i=0; $i<count($zones); $i++)
                                                                         <option value="{{ $zones[$i]['zone_id'] }}"
-                                                                                @if(old('state')==$zones[$i]) selected @endif>{{ $zones[$i]['name'] }}</option>
+                                                                                @if(old('state')==$zones[$i]['zone_id']) selected @endif>{{ $zones[$i]['name'] }}</option>
                                                                     @endfor
                                                                 </select>
 
@@ -411,7 +411,7 @@
                                                                     <option disabled selected> Choose country</option>
                                                                     @for($i=0; $i<count($countries); $i++)
                                                                         <option value="{{ $countries[$i]['country_id'] }}"
-                                                                                @if(old('country')==$countries[$i]) selected @endif>{{ $countries[$i]['name'] }}</option>
+                                                                                @if(old('country')==$countries[$i]['country_id']) selected @endif>{{ $countries[$i]['name'] }}</option>
                                                                     @endfor
                                                                 </select>
 
@@ -459,9 +459,9 @@
                                                                         data-style="btn btn-primary btn-round"
                                                                         title="ID Type" data-size="7"
                                                                         name="id_type">
-                                                                    <option value="SSN">SSN</option>
-                                                                    <option value="TIN">TIN</option>
-                                                                    <option value="EIN">EIN</option>
+                                                                    <option @if(old('id_type')=="SSN") selected @endif value="SSN">SSN</option>
+                                                                    <option @if(old('id_type')=="TIN") selected @endif value="TIN">TIN</option>
+                                                                    <option @if(old('id_type')=="EIN") selected @endif value="EIN">EIN</option>
                                                                 </select>
                                                             </div>
                                                         </div>
