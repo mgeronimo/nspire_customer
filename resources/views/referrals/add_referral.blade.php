@@ -23,7 +23,7 @@
                     </div>
                 </div><br/>
             @endif
-            <div class="card wizard-card" data-color="rose" id="wizardProfile">
+            <div class="wizard-card" data-color="rose" id="wizardProfile">
                 <form id="registerForm" class="form" method="POST" action="{{ url('add-referral') }}">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <!--        You can switch " data-color="purple" "  with one of the next bright colors: "green", "orange", "red", "blue"       -->
