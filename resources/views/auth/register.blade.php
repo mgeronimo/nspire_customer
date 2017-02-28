@@ -33,15 +33,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href=" ../dashboard.html ">Nspire Network</a>
+            <a class="navbar-brand" href="http://nspirenetwork.com">Nspire Network</a>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <!-- <li>
-                    <a href="../dashboard.html">
-                        <i class="material-icons">dashboard</i> Dashboard
+                <li class="">
+                    <a href="https://aedenbernardo.net/landing">
+                        <i class="material-icons">home</i> Home
                     </a>
-                </li> -->
+                </li>
                 <li class=" active ">
                     <a href="{{ url('/register') }}">
                         <i class="material-icons">person_add</i> Register
@@ -52,11 +52,6 @@
                         <i class="material-icons">fingerprint</i> Login
                     </a>
                 </li>
-                <!-- <li class="">
-                    <a href="lock.html">
-                        <i class="material-icons">lock_open</i> Lock
-                    </a>
-                </li> -->
             </ul>
         </div>
     </div>
